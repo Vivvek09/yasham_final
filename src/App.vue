@@ -49,7 +49,7 @@
         background: #FFF;
         padding: 64px 180px;
         transition: all 0.25s;
-        margin-top:60px;
+    
     }
 
     .subsection-head{

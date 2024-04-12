@@ -1,6 +1,6 @@
 <template>
     <div class="footer">
-        <h4>Contact Us</h4>
+        <h4 style="text-align: center;">Contact Us</h4>
         <div class="footer-inner">
             <div class="footer-section">
                 <div style="font-weight: 600;" class="socials">
@@ -28,7 +28,7 @@
 <style scoped>
     .footer{
         background: var(--color-gradient);
-        padding: 32px 128px;
+        height: fit-content;
         padding-bottom: 16px;
         padding-top:8px;
         color: #FFF;
@@ -45,10 +45,10 @@
     }
 
     .footer-section{
-        width: fit-content;
+        width: 100%;
         margin-right: 32px;
-        flex-grow: 1;
-        justify-content: center;
+        justify-content: space-around;
+        display: flex;
     }
 
     .footer-section span{
@@ -64,16 +64,22 @@
     .footer-inner{
         width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-content: center;
-        justify-content: center;
+        justify-content: space-evenly;
+        gap: 13px;
     }
-
+    .socials{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+   
     .footer-bottom{
         border-top: solid 1px #FFFFFF40;
         padding-top: 16px;
         color: rgba(255,255,255,0.8);
-        margin-top: 32px;
+        margin-top: 10px;
         text-align: center;
     }
 

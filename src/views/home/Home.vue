@@ -71,12 +71,15 @@
       class="subsection mob-center scroll-reveal"
       style="background: #f5f5f5"
     >
-      <h2>
+  
+      <h2 >
         <i class="fas fa-user-check text-gradient" style="padding-right: 16px; font-size: 28px;"></i
         >Testimonials
       </h2>
+     
       <span class="underbar"></span>
       <Testimonials />
+      
     </div>
 
     <Footer />

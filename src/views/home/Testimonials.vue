@@ -7,7 +7,7 @@
       :navigationEnabled="true"
       :paginationActiveColor="'#f76f02'"
     >
-      <slide v-for="(item, index) in testList" :key="index" v-if!="item[7]">
+      <slide v-for="(item, index) in testList" :key="index" v-if!="item[7]"  >
         <TestimonialCard :item="item" />
       </slide>
     </carousel>

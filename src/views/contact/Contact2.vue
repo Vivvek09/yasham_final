@@ -20,7 +20,7 @@
             <div class="address-holder">
                 <span style="font-size: 25px; font-weight: 600;">Yasham Foundation</span><br>
                 <i class="far fa-envelope" style="display: inline-block; width: 32px; color: var(--color-primary)"></i> <a class="ylink" href="mailto:info@yashamfoundation.org">yashamfoundation@gmail.com</a><br>
-                <i class="fa fa-phone" style="display: inline-block; width: 32px; color: var(--color-primary)"></i> <a>+91 +91 9820373390</a><br>
+                <i class="fa fa-phone" style="display: inline-block; width: 32px; color: var(--color-primary)"></i> <a> +91 9820373390</a><br>
                 <br>
                 You can also get in touch with us on our social media pages at:
                 <div style="font-weight: 600; color: var(--color-primary)">

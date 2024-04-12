@@ -188,8 +188,10 @@ export default {
   z-index:999;
   background-color: white;
   margin-top:5px;
+  border-radius: 10%;
   padding:3px;
   padding-top: 25px;
+  padding-bottom: 5px;
 }
 
 .mnavbtn {
@@ -350,8 +352,8 @@ export default {
   }
 
   .navlogo{
-    height: 85px;
-    width: 85px;
+    height: 100px;
+    width: 100px;
     
     padding-top:0px;
     margin-left:25px;

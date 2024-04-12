@@ -15,7 +15,7 @@
     <div >
         <div class="heading" style="display: flex; justify-content: space-between; " >
         <h3 style="text-align: left; margin: 0px;">{{ item.name }}</h3>
-        <h4 style="padding-right: 20px; margin: 0px;">[ROLE]</h4>
+        <h4 style="padding-right: 20px; margin: 0px;"></h4>
       </div>
         <p > {{ item.content }}</p>
       </div>

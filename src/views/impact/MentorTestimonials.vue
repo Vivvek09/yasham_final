@@ -2,7 +2,7 @@
     <div class="route-page">
       <NavBar selecteditem="about" />
   
-      <div class="subsection subsection-head mob-center" style="margin-top: 60px;">
+      <div class="subsection subsection-head mob-center" >
         <h2>Mentor Testimonials</h2>
         <span class="underbar" style="background: #fff"></span><br />
         <p class="slide-in-left" style="line-height: 28px">
@@ -69,6 +69,12 @@ import testimonials from "@/content/testimonials.json";
   </script>
   
   <style>
+
+  @media screen and (max-width: 840px) {
+   .subsection{
+   margin-top: 0px;
+   }
+  }
   .team-holder {
     display: flex;
     flex-direction: row;

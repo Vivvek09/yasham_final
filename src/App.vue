@@ -49,6 +49,7 @@
         background: #FFF;
         padding: 64px 180px;
         transition: all 0.25s;
+        margin-top:60px;
     }
 
     .subsection-head{
@@ -136,6 +137,7 @@
     @media screen and (max-width: 1280px) {
         .subsection{
             padding: 24px 32px;
+            margin-top: 0px;
         }
         .subsection.mob-center{
             text-align: center;

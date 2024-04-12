@@ -75,7 +75,7 @@
       </a>
     </div>
     <div id="mnav">
-      <router-link to="/contact" class="mnav-item">Home</router-link>
+     
       <div class="dropdown" v-for="(section, index) in sections" :key="index">
         <span class="mnav-item" @click="toggleDropdown(section.name)">
           {{ section.name }} <i class="fas fa-chevron-down"></i>
@@ -94,6 +94,7 @@
           </router-link>
         </div>
       </div>
+      <router-link to="/contact" class="mnav-item">Contact Us</router-link>
     </div>
   </div>
 </template>
@@ -117,33 +118,31 @@ export default {
         {
           name: "Our Work",
           links: [
-            { label: "Yasham Centre Model", route: "/yasham-centre-model" },
-            { label: "Saathi Haath Badhana", route: "/saathi-haath-badhana" },
-            { label: "Sunn Zara", route: "/sunn-zara" },
-            { label: "Hum Honge Kaamyab", route: "/hum-honge-kamyab" },
+            { label: "Yasham Centre Model", route: "/programmes/centre-model" },
+            { label: "Saathi Haath Badhana", route: "/programmes/saathi-haath-badhana" },
+            { label: "Sunn Zara", route: "/programmes/sunn-zara" },
+            { label: "Hum Honge Kaamyab", route: "/programmes/hum-honge-kamyab" },
             {
               label: "Swacch English Mission",
-              route: "/swachh-english-mission",
+              route: "/programmes/swachh-english-mission",
             },
           ],
         },
         {
           name: "Our Impact",
           links: [
-            { label: "Testimonials", route: "/testimonials" },
+            { label: "Student Testimonials", route: "/student-testimonials" },
+            { label: "Mentor Testimonials", route: "/student-testimonials" },
             { label: "Yasham in News", route: "/yasham-in-news" },
           ],
         },
         {
           name: "Get Involved",
           links: [
-            { label: "Sponsor a Student", route: "/sponsor-a-student" },
-            { label: "Sponsor a Project", route: "/sponsor-a-project" },
-            { label: "Sponsor in Kind", route: "/sponsor-in-kind" },
-            { label: "Sponsor in Donation", route: "/sponsor-in-donation" },
-            { label: "Volunteer & Intern", route: "/volunteer-intern" },
-            { label: "Teach", route: "/teach" },
-            { label: "Mentor", route: "/mentor" },
+            { label: "Sponsor", route: "/support-us" },
+            { label: "Support Us", route: "/support-us" },
+            { label: "Teach", route: "/support-us" },
+            { label: "Mentor", route: "/support-us" },
           ],
         },
       ],

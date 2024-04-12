@@ -10,7 +10,7 @@
 
     <Goals></Goals>
 
-    <div class="subsection mob-center">
+    <div class="subsection mob-center top">
       <h2>
         <i
           class="fas fa-hands-helping text-gradient"

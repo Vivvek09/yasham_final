@@ -3,8 +3,8 @@
       <NavBar selecteditem="about" />
   
       <div
-        class="subsection mob-center scroll-reveal"
-        style="background: #f5f5f5; margin-top: 60px"
+        class="subsection mob-center scroll-reveal top"
+        style="background: #f5f5f5;"
         
       >
         <h2>

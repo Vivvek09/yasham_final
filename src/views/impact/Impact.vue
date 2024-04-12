@@ -2,7 +2,7 @@
     <div class="route-page">
         <NavBar selecteditem="impact" />
         
-        <div class="subsection subsection-head mob-center">
+        <div class="subsection subsection-head mob-center top">
             <h1>Our Impact</h1>
             <span class="underbar"></span>
         </div>

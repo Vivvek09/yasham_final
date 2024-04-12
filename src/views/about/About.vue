@@ -2,7 +2,7 @@
     <div class="route-page">
       <NavBar selecteditem="about" />
   
-      <div class="subsection subsection-head mob-center" >
+      <div class="subsection subsection-head mob-center top" >
         <h2>About Yasham</h2>
         <span class="underbar" style="background: #fff"></span><br />
         <p class="slide-in-left" style="line-height: 28px">
@@ -100,9 +100,7 @@
   </script>
   
   <style>
-  .subsection{
-    margin-top: 60px;
-  }
+  
   .team-holder {
     display: flex;
     flex-direction: row;
@@ -114,9 +112,5 @@
   h3 {
     text-transform: uppercase;
   }
-  @media screen  and (max-width: 840px) {
-    .subsection{
-      margin-top: 0px;
-    }
-  }
+  
   </style>

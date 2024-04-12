@@ -49,7 +49,6 @@
         background: #FFF;
         padding: 64px 180px;
         transition: all 0.25s;
-    
     }
 
     .subsection-head{
@@ -121,6 +120,9 @@
         aspect-ratio: 1.75;
         max-width: 720px;
     }
+    .top{
+        margin-top: 60px;
+    }
 
     @media screen and (max-width: 1280px) {
         .subsection{
@@ -137,10 +139,14 @@
     @media screen and (max-width: 1280px) {
         .subsection{
             padding: 24px 32px;
-            margin-top: 0px;
         }
         .subsection.mob-center{
             text-align: center;
+        }
+    }
+    @media screen and (max-width: 960px) {
+        .top{
+            margin-top: 0px;
         }
     }
     

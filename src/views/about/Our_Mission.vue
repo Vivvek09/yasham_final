@@ -2,7 +2,7 @@
   <div class="route-page">
     <NavBar selecteditem="about" />
 
-    <div class="subsection subsection-head mob-center" style="margin-top: 60px;">
+    <div class="subsection subsection-head mob-center top" >
       <h2><i class="fas fa-landmark text-gradient" style="padding-right: 16px;"></i>Our Vision &amp; Mission</h2>
             <span class="underbar"></span><br>
             <p style="line-height: 28px;">

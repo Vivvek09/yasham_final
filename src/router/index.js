@@ -10,9 +10,19 @@ const routes = [{
         component: Home
     },
     {
+        path: '/our-mission',
+        name: 'Our Mission',
+        component: () => import('../views/about/Our_Mission.vue')
+    },
+    {
         path: '/about',
         name: 'About',
         component: () => import('../views/about/About.vue')
+    },
+    {
+        path: '/our-team',
+        name: 'Our Team',
+        component: () => import('../views/about/Our_Team.vue')
     },
     {
         path: '/what-we-do',
@@ -22,7 +32,7 @@ const routes = [{
     {
         path: '/contact',
         name: 'Contact',
-        component: () => import('../views/contact/Contact.vue')
+        component: () => import('../views/contact/Contact2.vue')
     },
     {
         path: '/our-impact',
@@ -48,6 +58,16 @@ const routes = [{
         path: '/feature/:featureId',
         name: 'Feature',
         component: () => import('../views/feature/Feature.vue')
+    },
+    {
+        path:'/student-testimonials',
+        name:'Student Testimonials',
+        component:()=>import('../views/impact/StudentTestimonials.vue')
+    },
+    {
+        path:'/mentor-testimonials',
+        name:'Mentor Testimonials',
+        component:()=>import('../views/impact/MentorTestimonials.vue')
     }
 ]
 

@@ -41,7 +41,7 @@ export default {
 <style scoped>
 .card {
   width: auto;
-  max-width: 230px;
+  max-width: 250px;
   height: auto;
   max-height: 420px;
   margin-bottom: 10px;
@@ -50,6 +50,7 @@ export default {
   background-color: white;
   overflow: auto;
   border-radius: 7px;
+  margin-right:10px;
 }
 
 .card-header {

@@ -3,15 +3,11 @@
     <NavBar selecteditem="home" />
     <Landing />
     <WaveDivider background="rgba(0,0,0,0.5)"></WaveDivider>
-    <div class="subsection mob-center scroll-reveal">
-      <h2>
-        <i class="fas fa-school text-gradient" style="padding-right: 16px"></i
-        >Vision & Mission
-      </h2>
-      <span class="underbar"></span>
+    <div class="subsection mob-center scroll-reveal" style="padding-top: 35px;">
+      
       <div class="about">
         <iframe
-          src="https://www.youtube.com/embed/NpEaa2P7qZI"
+          src="https://www.youtube.com/embed/mg9JoVv4w8E"
           title="video placeholder"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -51,8 +47,8 @@
 
     <div class="subsection mob-center scroll-reveal">
       <h2>
-        <i class="fas fa-school text-gradient" style="padding-right: 16px"></i
-        >Recent Programmes
+        <i class="fas fa-hand-holding-heart text-gradient" style="padding-right: 16px; font-size: 28px;"></i
+        >Our Initiatives
       </h2>
       <span class="underbar"></span>
       <div class="cards-holder">
@@ -64,7 +60,7 @@
           :item="item"
         ></CardItem>
       </div>
-      <router-link class="bigbtn" style="margin-top: 32px" to="what-we-do"
+      <router-link class="bigbtn" style="margin-top: 36px" to="what-we-do"
         >View More</router-link
       >
     </div>
@@ -76,7 +72,7 @@
       style="background: #f5f5f5"
     >
       <h2>
-        <i class="fas fa-school text-gradient" style="padding-right: 16px"></i
+        <i class="fas fa-user-check text-gradient" style="padding-right: 16px; font-size: 28px;"></i
         >Testimonials
       </h2>
       <span class="underbar"></span>
@@ -135,7 +131,7 @@ h2 {
   border-radius: 64px;
   background: var(--color-gradient);
   color: #fff;
-  padding: 20px 42px;
+  padding: 13px 28px;
   width: fit-content;
   font-weight: 600;
   cursor: pointer;
@@ -184,6 +180,8 @@ h2 {
   margin: 16px 16px 0px 0px;
   flex-grow: 1;
   max-width: calc(50% - 16px);
+  height: 250px;
+  border-radius: 3%;
 }
 
 @media screen and (max-width: 840px) {
@@ -193,7 +191,7 @@ h2 {
   }
   .mcard {
     margin: 16px 0px 0px 0px;
-    max-width: 540px;
+    max-width: 500px;
     width: 100%;
   }
 }

@@ -2,7 +2,7 @@
     <div class="route-page">
         <NavBar selecteditem="support" />
         
-        <div class="subsection subsection-head mob-center">
+        <div class="subsection subsection-head mob-center" style="margin-top: 60px;">
             <h1>Support Yasham</h1>
             <span class="underbar"></span>
             <p>
@@ -28,30 +28,8 @@
                             All donations are eligible for a 50% tax exemption under section 80G of the Income Tax Act.
                             <br>
                             <br>
-                            <div class="donate-field">
-                                <span style="font-weight: 600; flex-grow: 1; padding-right: 16px;">Name: </span>
-                                <span>Yasham Foundation</span>
-                            </div>
-
-                            <div class="donate-field">
-                                <span style="font-weight: 600; flex-grow: 1; padding-right: 16px;">Name of Bank: </span>
-                                <span>IDFC First Bank</span>
-                            </div>
                             
-                            <div class="donate-field">
-                                <span style="font-weight: 600; flex-grow: 1; padding-right: 16px;">Branch: </span>
-                                <span>Prabhadevi</span>
-                            </div>
-
-                            <div class="donate-field">
-                                <span style="font-weight: 600; flex-grow: 1; padding-right: 16px;">Account Number: </span>
-                                <span>10034997726</span>
-                            </div>
-
-                            <div class="donate-field">
-                                <span style="font-weight: 600; flex-grow: 1; padding-right: 16px;">IFSC Code: </span>
-                                <span>IDFB0040102</span>
-                            </div>
+                            <ContactForm />
 
                             <span style="padding: 16px; padding-bottom: 0px;">We also accept donations in cash or kind. Contact Us!</span>
                         </p>
@@ -77,11 +55,13 @@
                                 <span style="font-weight: 600; flex-grow: 1; padding-right: 16px;">Mobile: </span>
                                 <span>+91 9920471772</span>
                             </div>
-                        </p>
+                    </p>
                     </div>
+                
                 </div>
             </div>
-
+            
+           
 
         <Footer />
     </div>
@@ -91,12 +71,14 @@
     import NavBar from '@/components/NavBar.vue'
     import Footer from '@/components/Footer.vue'
     import WaveDivider from '@/components/WaveDivider.vue'
+import ContactForm from '../../components/ContactForm.vue'
 
     export default {
         components: {
             NavBar,
             Footer,
-            WaveDivider
+            WaveDivider,
+                ContactForm
         }
     }
 </script>

@@ -7,7 +7,7 @@
       :navigationEnabled="true"
       :paginationActiveColor="'#f76f02'"
     >
-      <slide v-for="(item, index) in testList" :key="index">
+      <slide v-for="(item, index) in testList" :key="index" v-if!="item[7]">
         <TestimonialCard :item="item" />
       </slide>
     </carousel>
@@ -29,7 +29,7 @@ export default {
   },
   data: function () {
     return {
-      perPage: 3,
+      perPage: 4,
       testList: testimonials,
     };
   },
@@ -78,7 +78,7 @@ export default {
 @media only screen and (max-width: 600px) {
   .VueCarousel-wrapper {
     text-align: center;
-    left: 23vw;
+    left: 11vw;
   }
 }
 </style>

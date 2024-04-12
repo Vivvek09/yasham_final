@@ -97,6 +97,7 @@
             align-items: center;
             gap: 10px;
             text-align: center;
+            flex-wrap: wrap;
         }
         .socials{
             display: flex;
@@ -131,6 +132,7 @@
             align-items: center;
             gap: 10px;
             text-align: center;
+            flex-wrap: wrap;
         }
         .socials{
             display: flex;

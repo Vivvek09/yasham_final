@@ -5,7 +5,7 @@
       <div>
         <router-link to="/contact" class="navbtn">Contact Us</router-link>
         <div class="dropdown">
-          <span class="navbtn">Our Story</span>
+          <span style="cursor: default;" class="navbtn">Our Story</span>
           <div class="dropdown-content">
 
             <router-link to="/our-team" class="mnav-item">Our Team</router-link>
@@ -16,7 +16,7 @@
           </div>
         </div>
         <div class="dropdown">
-          <span class="navbtn">Our Work</span>
+          <span style="cursor: default;" class="navbtn">Our Work</span>
           <div class="dropdown-content">
             <router-link to="/programmes/centre-model" class="mnav-item"
               >Yasham Centre Model</router-link
@@ -36,7 +36,7 @@
           </div>
         </div>
         <div class="dropdown">
-          <span class="navbtn">Our Impact</span>
+          <span style="cursor: default;" class="navbtn">Our Impact</span>
           <div class="dropdown-content">
             <router-link to="/student-testimonials" class="mnav-item"
               >Student Testimonials</router-link
@@ -50,7 +50,7 @@
           </div>
         </div>
         <div class="dropdown">
-          <span class="navbtn">Get Involved</span>
+          <span style="cursor: default;" class="navbtn">Get Involved</span>
           <div class="dropdown-content">
             <div class="sub-dropdown">
               <span class="mnav-item">Sponsor</span>
@@ -253,7 +253,7 @@ export default {
 
 .mnav-item:hover {
   color: var(--color-primary);
-  background: #f76f020b;
+  background:white;
 }
 
 .mnav-item:active {

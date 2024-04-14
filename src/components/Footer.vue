@@ -4,9 +4,9 @@
         <div class="footer-inner">
             <div class="footer-section">
                 <div style="font-weight: 600;" class="socials">
-                    <a href="https://www.instagram.com/yasham_foundation/"><i class="fab fa-instagram" style="display: inline-block; max-width: 32px;"></i> Instagram</a>
-                    <a href="https://www.facebook.com/101851225485402/posts/104813755189149/"><i class="fab fa-facebook" style="display: inline-block; max-width: 32px;"></i> Facebook</a>
-                    <a href="https://www.linkedin.com/company/yasham-foundation"><i class="fab fa-linkedin" style="display: inline-block; max-width: 32px;"></i> LinkedIn</a>
+                    <a href="https://www.instagram.com/yasham_foundation/"><i class="fab fa-instagram" style="display: inline-block; max-width: 32px;"></i> <p class="ptext" style="display: inline; padding-left: 10px;"> Instagram </p></a>
+                    <a href="https://www.facebook.com/101851225485402/posts/104813755189149/"><i class="fab fa-facebook" style="display: inline-block; max-width: 32px;"></i> <p class="ptext" style="display: inline; padding-left: 10px;">Facebook</p></a>
+                    <a href="https://www.linkedin.com/company/yasham-foundation"><i class="fab fa-linkedin" style="display: inline-block; max-width: 32px;"></i><p class="ptext" style="display: inline; padding-left: 10px;">LinkedIn</p></a>
                 </div>
             </div>
             <div class="footer-section">
@@ -47,8 +47,9 @@
     .footer-section{
         width: 100%;
         margin-right: 32px;
-        justify-content: space-around;
+        justify-content: center;
         display: flex;
+        gap: 90px;
     }
 
     .footer-section span{
@@ -71,13 +72,14 @@
     }
     .socials{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         width: 100%;
+        gap:60px;
     }
    
     .footer-bottom{
         border-top: solid 1px #FFFFFF40;
-        padding-top: 16px;
+        padding-top: 6px;
         color: rgba(255,255,255,0.8);
         margin-top: 10px;
         text-align: center;
@@ -127,6 +129,10 @@
             align-items: center;
             gap: 4px;
         }
+        .socials{
+            scale: 1.1;
+            padding-bottom: 10px;
+        }
         .footer-section{
             flex-direction: row;
             align-items: center;
@@ -137,12 +143,16 @@
         .socials{
             display: flex;
             flex-direction: row;
-            gap: 30px;
-
+            gap: 10px;
+            justify-content:center;
+            padding-left: 80px;
         }
         .far fa-envelope{
             padding-bottom: 16px;
         }
-        
+        .ptext{
+            display: none;
+            visibility: hidden;
+        }
     }
 </style>

@@ -1,13 +1,13 @@
 <template>
   <div class="route-page">
-    <MinNavBar title="Programmes"></MinNavBar>
+    <NavBar />
 
     <div
       style="
         background: var(--color-gradient) !important;
         padding-top: 5px !important;
       "
-      class="subsection subsection-head mob-center"
+      class="top subsection subsection-head mob-center"
     >
       <h1>{{ programme.title }}</h1>
       <span class="underbar"></span>
@@ -32,10 +32,11 @@
 <script>
 import Footer from "@/components/Footer.vue";
 // import WaveDivider from "@/components/WaveDivider.vue";
-import MinNavBar from "@/components/MinNavBar.vue";
+
 import PhotoGallery from "../../components/PhotoGallery.vue";
 import client from "../../client";
 import imageUrlBuilder from "@sanity/image-url";
+import NavBar from "../../components/NavBar.vue";
 const imageBuilder = imageUrlBuilder(client);
 // import {SanityBlocks} from 'sanity-blocks-vue-component'; 
 
@@ -43,8 +44,9 @@ export default {
   components: {
     Footer,
     // WaveDivider,
-    MinNavBar,
+  
     PhotoGallery,
+    NavBar,
     // SanityBlocks,
     // BlockContent
   },
@@ -95,6 +97,9 @@ export default {
   top: 0;
   transform: scale(1);
 }
+.top{
+    margin-top: 60px;
+  }
 
 .cards-holder {
   display: flex;
@@ -112,6 +117,9 @@ export default {
   .cards-holder {
     flex-direction: column;
     align-items: center;
+  }
+  .top{
+    margin-top: 0px;
   }
   .mcard {
     margin: 16px 0px 0px 0px;

@@ -14,7 +14,7 @@
           allowfullscreen
         ></iframe>
         <div class="vert-bar"></div>
-        <p style="line-height: 28px">
+        <p style="line-height: 28px; align-self: center;">
           <b>Educate. Enlighten. Empower.</b><br />
           <!-- – a mind that challenges itself is a mind that shines through tough
           circumstances.<br />
@@ -33,12 +33,12 @@
           background. To achieve our vision, we play an active role as a
           mediator between a child's aspirations and the acquisition of their
           goals. -->
-          Yasham works at the grassroots level with a holistic approach to
-          create a tangible change in every life yasham touches upon with a
-          lifelong perspective.<br />We guide, counsel, support and when
-          required sponsor school/college students in the field of education.<br /> To
-          achieve our mission and vision we also work in the field of health,
-          creating awareness in women of their power and youth mobilization.
+          To be able to guide and assist the many promising minds is one of the most gratifying
+         feelings that motivates us at Yasham. <br>
+          Yasham predominantly works in education to sharpen young minds today so that they
+          might red-pencil the assigned labels. <br>
+          To achieve our vision, we actively mediate between a child's aspirations and the
+         acquisition of their goals. 
         </p>
       </div>
     </div>

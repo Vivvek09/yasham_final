@@ -2,7 +2,7 @@
   <div class="route-page">
     <NavBar selecteditem="work" />
 
-    <div class="subsection subsection-head mob-center">
+    <div  class="top subsection subsection-head mob-center">
       <h1>What Does Yasham Do?</h1>
       <span class="underbar"></span>
       <!-- <p>With our main focus on Education, we follow a five-point program.</p> -->
@@ -37,10 +37,10 @@
       </h2>
       <span class="underbar"></span>
       <div class="cards-holder">
-        <CardItem
+        <CardItem style="cursor: default;"
           class="mcard"
           v-for="(item) in communities"
-          :route="'communities/' + item.slug.current"
+          
           :key="item.slug.current"
           :item="item"
         ></CardItem>
@@ -98,6 +98,9 @@ export default {
   flex-wrap: wrap;
 }
 
+.top{
+  margin-top: 60pxs;
+}
 .mcard {
   margin: 16px 16px 0px 0px;
   flex-grow: 1;
@@ -113,6 +116,9 @@ export default {
     margin: 16px 0px 0px 0px;
     max-width: 540px;
     width: 100%;
+  }
+  .top{
+    margin-top: 0px;
   }
 }
 </style>

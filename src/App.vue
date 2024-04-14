@@ -136,7 +136,7 @@
         }
     }
 
-    @media screen and (max-width: 1280px) {
+    @media screen and (max-width: 2000px) {
         .subsection{
             padding: 24px 32px;
         }

@@ -7,8 +7,6 @@
             <span class="underbar"></span>
         </div>
 
-        
-
         <div class="subsection mob-center" style="background: #F5F5F5;">
             <div class="subsection mob-center" style="background: #FFFFFF;">
             

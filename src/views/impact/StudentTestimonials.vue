@@ -65,6 +65,7 @@ mounted: async function () {
   const query = '*[_type == "testimonial"]';
   this.testList = await client.fetch(query);
 },
+
 };
 </script>
 

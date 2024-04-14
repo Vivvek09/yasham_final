@@ -79,7 +79,7 @@
    
     .footer-bottom{
         border-top: solid 1px #FFFFFF40;
-        padding-top: 6px;
+        padding-top: 16px;
         color: rgba(255,255,255,0.8);
         margin-top: 10px;
         text-align: center;
@@ -131,7 +131,7 @@
         }
         .socials{
             scale: 1.1;
-            padding-bottom: 10px;
+            
         }
         .footer-section{
             flex-direction: row;
@@ -145,7 +145,7 @@
             flex-direction: row;
             gap: 10px;
             justify-content:center;
-            
+           
         }
         .far fa-envelope{
             padding-bottom: 16px;

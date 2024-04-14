@@ -31,57 +31,61 @@
 
 <script>
 import Footer from "@/components/Footer.vue";
-// import WaveDivider from "@/components/WaveDivider.vue";
-
 import PhotoGallery from "../../components/PhotoGallery.vue";
 import client from "../../client";
 import imageUrlBuilder from "@sanity/image-url";
 import NavBar from "../../components/NavBar.vue";
+
 const imageBuilder = imageUrlBuilder(client);
-// import {SanityBlocks} from 'sanity-blocks-vue-component'; 
 
 export default {
   components: {
     Footer,
-    // WaveDivider,
-  
     PhotoGallery,
     NavBar,
-    // SanityBlocks,
-    // BlockContent
   },
-  data: function () {
+  data() {
     return {
-      blocks: [
-        {
-          _type: 'greeting', // Sanity specific prop, corresponds to the serializer name
-          _key: 'example', // Sanity specific prop
-          firstname: 'Foobert', // Example custom property for this block type
-          lastname: 'Barson', // Example custom property for this block type
-        }
-      ],
+      blocks: [],
       images: [],
-      programme: [],
+      programme: {},
       contentHtml: ""
     };
   },
-  mounted: async function () {
-    // eslint-disable-next-line no-undef
-    const slug = this.$route.params.programmeId;
-    const query = `*[_type == "post" && slug.current == '${slug}']`;
-    const programme = await client.fetch(query);
-    this.programme = programme[0]
-    this.contentHtml = this.programme.body
-    // this.blocks = JSON.parse(this.programme.body)
-    // Object.assign([],this.blocks)
-    this.images = this.programme.photoGallery?.map(e=>this.imageUrlFor(e))
-    // console.log(blocks)
+  async mounted() {
+    await this.fetchProgrammeData(this.$route.params.programmeId);
+  },
+  beforeRouteUpdate(to, from, next) {
+    // Fetch new data when route changes
+    this.fetchProgrammeData(to.params.programmeId);
+    next();
   },
   methods: {
+    async fetchProgrammeData(programmeId) {
+      const query = `*[_type == "post" && slug.current == '${programmeId}']`;
+      try {
+        const programme = await client.fetch(query);
+        this.programme = programme[0] || {};
+        this.contentHtml = this.programme.body || "";
+        this.images = (this.programme.photoGallery || []).map(e => this.imageUrlFor(e));
+      } catch (error) {
+        console.error('Error fetching programme data:', error);
+      }
+    },
     imageUrlFor(source) {
-      // console.log(imageBuilder.image(source))
       return imageBuilder.image(source);
     },
+    navigateToProgramme(programmeId) {
+      const url = `/programmes/${programmeId}`;
+      if (this.isMobileDevice()) {
+        window.location.href = url;
+      } else {
+        this.$router.push(url);
+      }
+    },
+    isMobileDevice() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
   }
 };
 </script>

@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <form>
+        <form @submit.prevent="sendEmail">
           <label>Name</label>
           <input 
             type="text" 
@@ -31,12 +31,55 @@
             placeholder="Message">
           </textarea>
           
-          <input type="submit" value="Send">
+          <input type="submit" value="Send"  >
         </form>
     </div>
 </template>
 
+<script>
+ 
+    import emailjs from 'emailjs-com';
+    export default {
+      data() {
+    return {
+      name: '',    // Define name property in the data option
+      number: '',  // Define number property in the data option
+      email: '',   // Define email property in the data option
+      message: ''  // Define message property in the data option
+    };
+  },
+        
+        mounted() {
+    // Initialize EmailJS with your public key
+    emailjs.init('WpKtim6_gHYTg9w7u');
+  },
+  methods: {
+    sendEmail() {
+      console.log('Sending email...');
+      // Define template parameters
+      const templateParams = {
+        name: this.name,
+        number: this.number,
+        email: this.email,
+        message: this.message
+      };
+
+      // Send email using EmailJS
+      emailjs.send('service_df8e9ji', 'template_zko7iy7', templateParams)
+        .then((response) => {
+          console.log('Email sent successfully:', response);
+          // Handle success, e.g., show a success message
+        })
+        .catch((error) => {
+          console.error('Email sending failed:', error);
+          // Handle error, e.g., show an error message
+        });
+    }
+  }
+    
+    }
 </script>
+
 
 <style scoped>
 * {box-sizing: border-box;}

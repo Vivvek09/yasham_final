@@ -40,6 +40,11 @@ const routes = [{
         component: () => import('../views/impact/Impact.vue')
     },
     {
+        path: '/our-initiatives',
+        name: 'Initiatives',
+        component: () => import('../views/work/Work.vue')
+    },
+    {
         path: '/support-us',
         name: 'Support',
         component: () => import('../views/support/Support.vue')
@@ -68,6 +73,11 @@ const routes = [{
         path:'/mentor-testimonials',
         name:'Mentor Testimonials',
         component:()=>import('../views/impact/MentorTestimonials.vue')
+    },
+    {
+        path:'/maintenance',
+        name:'Maintenance',
+        component:()=>import('../views/maintenance/Maintain.vue')
     }
 ]
 

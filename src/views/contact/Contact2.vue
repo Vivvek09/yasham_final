@@ -46,14 +46,13 @@
     import NavBar from '@/components/NavBar.vue'
     import Footer from '@/components/Footer.vue'
     import WaveDivider from '@/components/WaveDivider.vue'
-
     export default {
         components: {
             NavBar,
             Footer,
-            WaveDivider,
-               
-        }
+            WaveDivider,   
+        },
+    
     }
 </script>
 

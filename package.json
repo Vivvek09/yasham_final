@@ -7,10 +7,12 @@
     "build": "vue-cli-service build --openssl-legacy-provider"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "@sanity/cli": "^3.11.5",
     "@sanity/client": "^6.1.2",
     "@sanity/image-url": "^1.0.2",
     "core-js": "^3.6.5",
+    "emailjs-com": "^3.2.0",
     "sanity-blocks-vue-component": "^1.0.1",
     "vue": "^2.6.11",
     "vue-carousel": "^0.18.0",

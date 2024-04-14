@@ -1,7 +1,7 @@
 <template>
     <div style="width: 100%;">
         <div class="nc-item" id="nc-animator">
-            <div>
+            <div style=" background-color: black; border-radius: 3%; padding: 3px; padding-bottom:0px">
                 <img :src="news[currentNews].image" />
             </div>
             <div class="nc-right">
@@ -12,18 +12,19 @@
                     <span class="nc-apos">"</span>
                 </span>
                 <p style="line-height: 28px" v-html="news[currentNews].content"></p>
+                <a style="text-align: left; color:darkblue; font-weight: 700;" href="news[currentNews].href">Click here to read the Full Article</a>
             </div>
         </div>
         
         <div class="carousel-select">
-            <span v-for="(news, index) in news" v-on:click="selectNews(index)" v-bind:key="index" v-bind:selected="currentNews==index"></span>
+            <span v-if!="" v-for="(news, index) in news" v-on:click="selectNews(index)" v-bind:key="index" v-bind:selected="currentNews==index"></span>
         </div>
     </div>
 </template>
 
 <script>
     let newsImages = [
-        require('@/assets/images/image_placeholder3.jpg'),
+        require('@/assets/images/mm.png'),
         require('@/assets/images/image_placeholder2.jpg'),
         require('@/assets/images/image_placeholder3bw.jpg'),
     ]
@@ -44,7 +45,8 @@
                     ncAnimator.classList.add("slide-in");
                 },250);
                 
-            }
+            },
+            
         },
         data: function(){
             return {
@@ -55,25 +57,10 @@
                         content: `
                             Yasham Foundation has always aspired to help the youth of this nation work towards a brighter future by helping them realise their dreams.\n\nAnd the same can be said when a group of students approached our Founder, Sunita Mandelia for help with finances to enrol for JEE and NEET classes. Despite not having the funds to aid the students fully, the foundation found a way to help these bright minds.\n\nAnd help came from ‘one of the foundation’s brightest students, Shivam’. Despite preparing for JEE himself he chose to help his peers by coaching them twice a week. Since then several other professionals have joined the foundation in helping these young, driven minds in coming one step closer their goals. After all, in the words of our founder, ‘the future belongs to the youths, if we nurture them, they will be the nation’s glory.’
                             `,
+                            href: `https://mumbaimirror.indiatimes.com/mumbai/other/keeping-their-jee-neet-dreams-alive/articleshow/78962390.cms`,
                         image: newsImages[0]
                     },
-                    {
-                        title: "THE AFTERNOON DISPATCH & COURIER",
-                        subtitle: "90 underprivileged kids get Road Safety lessons",
-                        content: `
-                            Educating children in all aspects of life is of utmost importance as they are the future of tomorrow and they can help us strive towards a better and safer tomorrow.\n\nYasham Foundation was extremely privileged and happy to collaborate with the Ministry of Road Transport and Highways for the 30th Road Safety Week campaign in February, 2019.\n\nYasham conducted a training session for children aged 6-8 on the importance of road safety; crossing along a zebra crossing, using footpaths, bus danger zones etc. This was done through various games like ‘ring and win’ and ‘wheel of safety’.\n\nEducating children in road safety is extremely important so that they are aware of rules and regulations and they can learn how to keep themselves safe, especially since a large number of children commute to and from school by walking.
-                            `,
-                        image: newsImages[0]
-                    },
-                    {
-                        title: "DNA DOWNSOUTH",
-                        subtitle: "Leading the way with small steps",
-                        content: `
-                            It is important for society to realise their privilege and help those without it and it brings Yasham great joy in facilitating this change especially when the youth of the nation choose to help their community.
-                            Stuti and Ishita were two sisters who volunteered with us and set an example on how they can use their privilege to help others and fulfil their hearts. Like them we have had several more volunteers who have done their bit by making a choice to do better each day.
-                            `,
-                        image: newsImages[0]
-                    }
+                    
                 ],
                 currentNews: 0
             }
@@ -91,11 +78,12 @@
     }
 
     .nc-item img{
-        width: 320px;
+        width: 360px;
         height: 320px;
-        object-fit: cover;
+       
         object-position: center;
         border-radius: 8px;
+        
     }
 
     .nc-item p{
@@ -156,6 +144,8 @@
         opacity: 1;
         transform: scale(1);
     }
+
+    
 
     @media screen and (max-width: 1080px) {
         .nc-item{

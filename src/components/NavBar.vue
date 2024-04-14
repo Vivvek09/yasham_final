@@ -13,6 +13,9 @@
             <router-link to="/our-mission" class="mnav-item"
               >Our Mission</router-link
             >
+            <router-link to="/our-initiatives" class="mnav-item"
+              >Our Initiatives</router-link
+            >
           </div>
         </div>
         <div class="dropdown">
@@ -52,17 +55,17 @@
         <div class="dropdown">
           <span style="cursor: default;" class="navbtn">Get Involved</span>
           <div class="dropdown-content">
-            <div class="sub-dropdown">
-              <span class="mnav-item">Sponsor</span>
-            </div>
+            <router-link to="/maintenance" class="mnav-item">
+              Sponsor
+            </router-link>
             <router-link to="/support-us" class="mnav-item"
               >Support Us</router-link
             >
-            <router-link to="/volunteer-intern" class="mnav-item"
+            <router-link to="/maintenance" class="mnav-item"
               >Volunteer & Intern</router-link
             >
-            <router-link to="/teach" class="mnav-item">Teach</router-link>
-            <router-link to="/mentor" class="mnav-item">Mentor</router-link>
+            <router-link to="/maintenance" class="mnav-item">Teach</router-link>
+            <router-link to="/maintenance" class="mnav-item">Mentor</router-link>
           </div>
         </div>
       </div>
@@ -112,7 +115,8 @@ export default {
           links: [
             { label: "Our Team", route: "/our-team" },
             { label: "Our Mission", route: "/our-mission" },
-            {label: "About  Us", route: "/about"}
+            {label: "About  Us", route: "/about"},
+            {label: "Our Initiatives", route: "/our-initiatives"}
           ],
         },
         {
@@ -139,10 +143,10 @@ export default {
         {
           name: "Get Involved",
           links: [
-            { label: "Sponsor", route: "/support-us" },
+            { label: "Sponsor", route: "/maintenance" },
             { label: "Support Us", route: "/support-us" },
-            { label: "Teach", route: "/support-us" },
-            { label: "Mentor", route: "/support-us" },
+            { label: "Teach", route: "/maintenance" },
+            { label: "Mentor", route: "/maintenance" },
           ],
         },
       ],

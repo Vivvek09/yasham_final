@@ -3,32 +3,26 @@
         <NavBar selecteditem="impact" />
         
         <div class="subsection subsection-head mob-center top">
-            <h1>Our Impact</h1>
+            <h1><i class="fa fa-newspaper " style="padding-right: 16px;"></i>Yasham in the News </h1>
             <span class="underbar"></span>
         </div>
 
-        <WaveDivider position="top" foreground="gradient" background="#F5F5F5" />
+        
 
         <div class="subsection mob-center" style="background: #F5F5F5;">
-            <h2><i class="fa fa-users text-gradient" style="padding-right: 16px;"></i>Success Stories</h2>
-            <span class="underbar"></span>
-            <div class="cards-holder">
-                <div style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 20px; font-weight: 500">
-                    <success-stories></success-stories>
-                </div>
-            </div>
-        </div>
-
-        <WaveDivider position="bottom" foreground="#FFFFFF" background="#F5F5F5" />
-        <div class="subsection mob-center" style="background: #FFFFFF;">
-            <h2><i class="fa fa-newspaper text-gradient" style="padding-right: 16px;"></i>Yasham In The News</h2>
-            <span class="underbar"></span>
+            <div class="subsection mob-center" style="background: #FFFFFF;">
+            
             <div class="cards-holder">
                 <div style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 20px; font-weight: 500">
                     <news-carousel></news-carousel>
                 </div>
             </div>
         </div>
+        </div>
+        
+
+        <WaveDivider position="bottom" foreground="#FFFFFF" background="#F5F5F5" />
+        
         <Footer />
     </div>
 </template>
@@ -37,7 +31,7 @@
     import NavBar from '@/components/NavBar.vue'
     import Footer from '@/components/Footer.vue'
     import WaveDivider from '@/components/WaveDivider.vue'
-    import SuccessStories from './SuccessStories.vue'
+    
     import NewsCarousel from './NewsCarousel.vue'
 
     export default {
@@ -45,7 +39,7 @@
             NavBar,
             Footer,
             WaveDivider,
-            SuccessStories,
+            
                 NewsCarousel
         }
     }

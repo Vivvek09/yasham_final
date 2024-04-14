@@ -145,7 +145,7 @@
             flex-direction: row;
             gap: 10px;
             justify-content:center;
-            padding-left: 80px;
+            
         }
         .far fa-envelope{
             padding-bottom: 16px;

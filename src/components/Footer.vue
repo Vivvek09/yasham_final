@@ -84,7 +84,7 @@
         margin-top: 10px;
         text-align: center;
     }
-
+     
     @media screen and (max-width: 840px){
         .footer{
             padding: 10px 48px;

@@ -47,7 +47,7 @@
             <router-link to="/mentor-testimonials" class="mnav-item"
               >Mentor Testimonials</router-link
             >
-            <router-link to="/yasham-in-news" class="mnav-item"
+            <router-link to="/our-impact" class="mnav-item"
               >Yasham in News</router-link
             >
           </div>
@@ -137,7 +137,7 @@ export default {
           links: [
             { label: "Student Testimonials", route: "/student-testimonials" },
             { label: "Mentor Testimonials", route: "/student-testimonials" },
-            { label: "Yasham in News", route: "/yasham-in-news" },
+            { label: "Yasham in News", route: "/our-impact" },
           ],
         },
         {
